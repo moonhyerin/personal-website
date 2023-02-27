@@ -17,7 +17,7 @@ export default function Header({ children, home }) {
           alt="Hyerin's website logo"
         />
       </Link>
-      <div>
+      <div className={styles.navigation}>
         <Link className={styles.menu} href="#home">
           Home
         </Link>
@@ -30,6 +30,8 @@ export default function Header({ children, home }) {
         <Link className={styles.menu} href="#contact">
           Contact
         </Link>
+        <Image src="/images/brightness.png" height={20} width={20} />
+        <Image src="/images/globe.png" height={20} width={20} />
       </div>
     </header>
   );

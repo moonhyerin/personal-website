@@ -10,12 +10,13 @@
   width: 100%;
 }
 
-.menu {
+.navigation .menu {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   font-size: 15px;
   color: black;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
 .menu:hover {

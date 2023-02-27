@@ -1,17 +1,10 @@
 import { useRef } from "react";
 import Header from "../components/header";
+import Home from "../components/home";
+import AboutMe from "../components/aboutMe";
 import styles from "../styles/utils.module.css";
 
-const sectionStyle = {
-  height: "100vh",
-  width: "100%",
-  fontSize: "40px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
-export default function Home() {
+export default function Landing() {
   const homeRef = useRef();
   const aboutMeRef = useRef();
   const workingRef = useRef();
@@ -19,17 +12,17 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Header style={styles.header} />
-      <section ref={homeRef} style={sectionStyle} id="home">
-        home
+      <Header className={styles.header} />
+      <section ref={homeRef} id="home">
+        <Home />
       </section>
-      <section ref={aboutMeRef} style={sectionStyle} id="aboutme">
-        about me
+      <section ref={aboutMeRef} id="aboutme">
+        <AboutMe />
       </section>
-      <section ref={workingRef} style={sectionStyle} id="working">
+      <section ref={workingRef} id="working">
         working
       </section>
-      <section ref={contactRef} style={sectionStyle} id="contact">
+      <section ref={contactRef} id="contact">
         contact
       </section>
     </div>
