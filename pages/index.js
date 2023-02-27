@@ -1,8 +1,4 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import { useRef } from "react";
-import Layout, { siteTitle } from "../components/layout";
 import Header from "../components/header";
 import styles from "../styles/utils.module.css";
 
