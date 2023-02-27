@@ -1,0 +1,14 @@
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  border-radius: 150px;
+}
+
+.skills {
+  width: 300px;
+}
