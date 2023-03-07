@@ -1,6 +1,7 @@
-import { useRef } from "react";
-import Header from "./header";
-import homeStyles from "./home.module.css";
+import { useRef } from 'react';
+import TypeIt from 'typeit-react';
+
+import homeStyles from './home.module.css';
 
 export default function Home() {
   const homeRef = useRef();
@@ -8,10 +9,22 @@ export default function Home() {
   return (
     <>
       <div className={homeStyles.title}>
-        <p>Hi, I'm Hyerin</p>
+        <p>Hi, I'm Hyerin 👩🏼‍💻</p>
         <p>
-          a <span className={homeStyles.highlight}>software developer</span> who
-          is
+          a{' '}
+          <TypeIt
+            options={{
+              strings: ['software developer'],
+              speed: 150,
+              startDelay: 900,
+              loop: true,
+              loopDelay: 5000,
+              lifeLike: true,
+              waitUntilVisible: true,
+            }}
+            className={homeStyles.highlight}
+          />{' '}
+          who is
         </p>
         <p className={homeStyles.description}>
           interested in new technology. I am keen on user experience and design.
