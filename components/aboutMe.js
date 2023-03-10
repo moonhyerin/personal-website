@@ -7,17 +7,23 @@ import aboutMeStyles from './aboutMe.module.css';
 
 const skillSets = [
   'Javascript',
+  'Typescript',
   'React',
+  'Redux',
   'Node.js',
   'HTML/CSS',
-  'Typescript',
+  'SCSS',
   'Git',
   'GraphQL',
   'MongoDB',
   'Next.js',
   'TDD',
   'Figma',
-  'jest',
+  'Jest',
+  'Cypress',
+  'Java',
+  'Spring',
+  'OracleDB',
 ];
 
 export default function AboutMe() {
