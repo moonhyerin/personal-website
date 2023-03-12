@@ -1,30 +1,29 @@
-import React from 'react';
+import * as React from 'react';
 import Image from 'next/image';
-
 import SkillCard from './SkillCard';
 
 import aboutMeStyles from './aboutMe.module.css';
 
-const skillSets = [
-  'Javascript',
-  'Typescript',
-  'React',
-  'Redux',
-  'Node.js',
-  'HTML/CSS',
-  'SCSS',
-  'Git',
-  'GraphQL',
-  'MongoDB',
-  'Next.js',
-  'TDD',
-  'Figma',
-  'Jest',
-  'Cypress',
-  'Java',
-  'Spring',
-  'OracleDB',
-];
+const skillSets = {
+  Javascript: 'Javascript',
+  Typescript: 'Typescript',
+  React: 'React',
+  Redux: 'test',
+  'Node.js': 'test',
+  'HTML/CSS': 'test',
+  SCSS: 'test',
+  Git: 'test',
+  GraphQL: 'test',
+  MongoDB: 'test',
+  'Next.js': 'test',
+  TDD: 'test',
+  Figma: 'test',
+  Jest: 'test',
+  Cypress: 'test',
+  Java: 'test',
+  Spring: 'test',
+  OracleDB: 'test',
+};
 
 export default function AboutMe() {
   return (
@@ -37,8 +36,8 @@ export default function AboutMe() {
         alt=''
       />
       <div className={aboutMeStyles.skills}>
-        {skillSets.map((skill) => (
-          <SkillCard skillName={skill} />
+        {Object.keys(skillSets).map((skill) => (
+          <SkillCard name={skill} description={skillSets[skill]} />
         ))}
       </div>
     </div>

@@ -7,11 +7,16 @@
   },
   "dependencies": {
     "@craco/craco": "^7.0.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@headlessui/react": "^1.7.13",
+    "@mui/material": "^5.11.12",
+    "@mui/styled-engine-sc": "^5.11.11",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
+    "styled-components": "^5.3.8",
     "typeit-react": "^2.6.4"
   },
   "devDependencies": {
