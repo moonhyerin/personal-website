@@ -1,6 +1,7 @@
+import React from 'react';
 import TypeIt from 'typeit-react';
 
-import homeStyles from './home.module.css';
+import homeStyles from './HomePage.module.css';
 
 export default function Home({ isMobile }) {
   return (
@@ -15,8 +16,6 @@ export default function Home({ isMobile }) {
               speed: 150,
               startDelay: 900,
               lifeLike: true,
-              loop: true,
-              loopDelay: 7000,
               waitUntilVisible: true,
             }}
             className={homeStyles.highlight}

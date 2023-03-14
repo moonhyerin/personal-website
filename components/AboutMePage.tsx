@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import Image from 'next/image';
 import SkillCard from './SkillCard';
 
-import aboutMeStyles from './aboutMe.module.css';
+import aboutMeStyles from './AboutMePage.module.css';
 
 const skillSets = {
   Javascript: 'Javascript',
