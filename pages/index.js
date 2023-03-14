@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import Header from '../components/header';
-import Home from '../components/home';
-import AboutMe from '../components/aboutMe';
+import Header from '../components/Header';
+import HomePage from '../components/HomePage';
+import AboutMePage from '../components/AboutMePage';
+import WorkingPage from '../components/WorkingPage';
+
 import styles from '../styles/utils.module.css';
 
 export default function Landing() {
@@ -26,13 +28,13 @@ export default function Landing() {
     <div className={styles.container}>
       <Header className={styles.header} isMobile={isMobile} />
       <section ref={homeRef} id='home'>
-        <Home isMobile={isMobile} />
+        <HomePage isMobile={isMobile} />
       </section>
       <section ref={aboutMeRef} id='aboutme'>
-        <AboutMe />
+        <AboutMePage />
       </section>
       <section ref={workingRef} id='working'>
-        working
+        <WorkingPage />
       </section>
       <section ref={contactRef} id='contact'>
         contact
