@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from './Header.css';
+import styles from './Header.module.css';
 // import { Menu, Transition } from '@headlessui/react';
 
 export const siteTitle = "Hyerin's website";
