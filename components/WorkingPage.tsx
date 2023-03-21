@@ -16,8 +16,8 @@ const CustomFontTheme = createTheme({
 
 export default function WorkingPage() {
   const renderCard = () => {
-    return [1, 2, 3].map((i) => (
-      <ThemeProvider theme={CustomFontTheme}>
+    return [1, 2, 3].map((value, i) => (
+      <ThemeProvider key={i} theme={CustomFontTheme}>
         <Card
           className={styles.card}
           sx={{

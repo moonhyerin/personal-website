@@ -3,7 +3,13 @@ import TypeIt from 'typeit-react';
 
 import homeStyles from './HomePage.module.css';
 
-export default function Home({ isMobile }) {
+type PropsType = {
+  isMobile: boolean;
+};
+
+const Home = (props: PropsType) => {
+  const { isMobile } = props;
+
   return (
     <>
       <div className={isMobile ? homeStyles.mobileTitle : homeStyles.title}>
@@ -44,4 +50,6 @@ export default function Home({ isMobile }) {
       </div>
     </>
   );
-}
+};
+
+export default Home;

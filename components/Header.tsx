@@ -1,15 +1,12 @@
 import React from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './Header.module.css';
-// import { Menu, Transition } from '@headlessui/react';
 
 export const siteTitle = "Hyerin's website";
-const menus = ['Home', 'About me', 'Working', 'Contact'];
 
-export default function Header({ children, home, isMobile }) {
+export default function Header({ isMobile }) {
   return (
     <header className={styles.header}>
       <Link href='https://www.hailee.me/'>
@@ -24,16 +21,16 @@ export default function Header({ children, home, isMobile }) {
       <div className={styles.navigation}>
         {!isMobile && (
           <>
-            <Link className={styles.menu} href='#home'>
+            <Link className={styles.menu} href='#home' scroll={false}>
               Home
             </Link>
-            <Link className={styles.menu} href='#aboutme'>
+            <Link className={styles.menu} href='#aboutme' scroll={false}>
               About me
             </Link>
-            <Link className={styles.menu} href='#working'>
+            <Link className={styles.menu} href='#working' scroll={false}>
               Working
             </Link>
-            <Link className={styles.menu} href='#contact'>
+            <Link className={styles.menu} href='#contact' scroll={false}>
               Contact
             </Link>
           </>

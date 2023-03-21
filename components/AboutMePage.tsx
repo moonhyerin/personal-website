@@ -37,7 +37,7 @@ export default function AboutMe() {
       />
       <div className={aboutMeStyles.skills}>
         {Object.keys(skillSets).map((skill) => (
-          <SkillCard name={skill} description={skillSets[skill]} />
+          <SkillCard key={skill} name={skill} description={skillSets[skill]} />
         ))}
       </div>
     </div>
