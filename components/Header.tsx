@@ -7,8 +7,12 @@ import styles from './Header.module.css';
 export const siteTitle = "Hyerin's website";
 
 export default function Header({ isMobile }) {
+  const changeDarkmode = () => {};
+
+  const changeLanguage = () => {};
+
   return (
-    <header className={styles.header}>
+    <div className={styles.header}>
       <Link href='https://www.hailee.me/'>
         <Image
           priority
@@ -35,9 +39,23 @@ export default function Header({ isMobile }) {
             </Link>
           </>
         )}
-        {/* <Image src="/images/brightness.png" height={20} width={20} />
-        <Image src="/images/globe.png" height={20} width={20} /> */}
       </div>
-    </header>
+      <div className={styles.setting}>
+        <Image
+          src='/images/darkmode.png'
+          height={35}
+          width={35}
+          alt=''
+          onClick={changeDarkmode}
+        />
+        <Image
+          src='/images/lang.png'
+          height={35}
+          width={35}
+          alt=''
+          onClick={changeLanguage}
+        />
+      </div>
+    </div>
   );
 }
