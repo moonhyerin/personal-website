@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import HomePage from '../components/HomePage';
 import AboutMePage from '../components/AboutMePage';
 import WorkingPage from '../components/WorkingPage';
+import ContactPage from '../components/ContactPage';
 
 import styles from '../styles/utils.module.css';
 
@@ -37,7 +38,7 @@ export default function Landing() {
         <WorkingPage />
       </section>
       <section ref={contactRef} id='contact'>
-        contact
+        <ContactPage />
       </section>
     </div>
   );

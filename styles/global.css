@@ -51,3 +51,8 @@ a:hover {
 .backToHome {
   margin: 3rem 0 0;
 }
+
+p::selection {
+  /* background-color: #ffb800; */
+  text-shadow: 1px 1px 3px #ffb800;
+}
