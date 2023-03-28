@@ -12,7 +12,7 @@ function ContactPage() {
         open. Whether you have a question or just want to say hi, I’ll try my
         best to get back to you!
       </p>
-      <Button>Say hello</Button>
+      <a href='#'>hrmoon081632@gmail.com</a>
     </div>
   );
 }
