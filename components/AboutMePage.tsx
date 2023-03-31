@@ -27,15 +27,16 @@ const skillSets = {
 
 export default function AboutMe() {
   return (
-    <div className={aboutMeStyles.aboutMe}>
+    <div className='md:h-screen flex flex-col md:flex-row items-center justify-center'>
+      {/* <div className={aboutMeStyles.aboutMe}> */}
       <Image
-        className={aboutMeStyles.profile}
+        className='rounded-full'
         src='/images/profile.jpg'
         width={310}
         height={470}
         alt=''
       />
-      <div className={aboutMeStyles.skills}>
+      <div className='w-5/6 md:w-3/6 my-10 md:my-0 md:ml-5 cursor-pointer'>
         {Object.keys(skillSets).map((skill) => (
           <SkillCard key={skill} name={skill} description={skillSets[skill]} />
         ))}

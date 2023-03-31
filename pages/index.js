@@ -6,8 +6,6 @@ import AboutMePage from '../components/AboutMePage';
 import WorkingPage from '../components/WorkingPage';
 import ContactPage from '../components/ContactPage';
 
-import styles from '../styles/utils.module.css';
-
 export default function Landing() {
   const homeRef = useRef();
   const aboutMeRef = useRef();
@@ -26,8 +24,8 @@ export default function Landing() {
   const isMobile = useIsMobile();
 
   return (
-    <div className={styles.container}>
-      <Header className={styles.header} isMobile={isMobile} />
+    <div className='flex flex-col'>
+      <Header className='sticky' isMobile={isMobile} />
       <section ref={homeRef} id='home'>
         <HomePage isMobile={isMobile} />
       </section>

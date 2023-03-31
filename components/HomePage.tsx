@@ -11,31 +11,30 @@ const Home = (props: PropsType) => {
   const { isMobile } = props;
 
   return (
-    <>
-      <div className={isMobile ? homeStyles.mobileTitle : homeStyles.title}>
-        <p>Hi, I'm Hyerin</p>
-        <p>
-          a{' '}
-          <TypeIt
-            options={{
-              strings: ['software developer'],
-              speed: 150,
-              startDelay: 900,
-              lifeLike: true,
-              waitUntilVisible: true,
-            }}
-            className={homeStyles.highlight}
-          />{' '}
-          {isMobile ? <p>who is</p> : 'who is'}
-        </p>
-        <p className={homeStyles.description}>
-          {isMobile
-            ? `understand the importance of staying up to date with the latest
+    <div className='h-screen text-center flex flex-col items-center justify-center'>
+      <p className='text-[50px] font-bold'>Hi, I'm Hyerin</p>
+      <p className='text-[50px] font-bold'>
+        a{' '}
+        <TypeIt
+          className='bg-[#ffb800]'
+          options={{
+            strings: ['software developer'],
+            speed: 150,
+            startDelay: 900,
+            lifeLike: true,
+            waitUntilVisible: true,
+          }}
+        />
+        {' who is'}
+      </p>
+      <p className='mt-[20px] w-4/6 text-center'>
+        {isMobile
+          ? `understand the importance of staying up to date with the latest
             technologies and trends in order to create the best possible
             products for users. Through continuous learning and hands-on
             experience, I strive to refine my skills and stay at the forefront
             of the ever-changing landscape of technology.`
-            : `understand the importance of staying up to date with the latest
+          : `understand the importance of staying up to date with the latest
             technologies and trends in order to create the best possible
             products for users. Through continuous learning and hands-on
             experience, I strive to refine my skills and stay at the forefront
@@ -43,12 +42,11 @@ const Home = (props: PropsType) => {
             As I experiment with new tools and techniques, I am constantly
             inspired by the creative possibilities that emerge, and am always
             eager to share my insights and learn from others in the field.`}
-          {/* interested in new technology. I am keen on user experience and design.
+        {/* interested in new technology. I am keen on user experience and design.
           So I feel rewarded to keep learning and creating things with my own
           hands, not staying in the current state. */}
-        </p>
-      </div>
-    </>
+      </p>
+    </div>
   );
 };
 
