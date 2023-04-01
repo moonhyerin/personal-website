@@ -1,13 +1,38 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
 
 import styles from './Header.module.css';
 
 export const siteTitle = "Hyerin's website";
 
 export default function Header({ isMobile }) {
-  const changeDarkmode = () => {};
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const renderThemeToggle = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    if (currentTheme === 'dark') {
+      return (
+        <Image
+          src='/images/darkmode.png'
+          height={35}
+          width={35}
+          alt=''
+          onClick={() => setTheme('light')}
+        />
+      );
+    }
+    return (
+      <Image
+        src='/images/darkmode.png'
+        height={35}
+        width={35}
+        alt=''
+        onClick={() => setTheme('dark')}
+      />
+    );
+  };
 
   const changeLanguage = () => {};
 
@@ -41,13 +66,7 @@ export default function Header({ isMobile }) {
         )}
       </div>
       <div className={styles.setting}>
-        <Image
-          src='/images/darkmode.png'
-          height={35}
-          width={35}
-          alt=''
-          onClick={changeDarkmode}
-        />
+        {renderThemeToggle()}
         <Image
           src='/images/lang.png'
           height={35}

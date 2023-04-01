@@ -1,5 +1,6 @@
 // `pages/_app.js`
 import React, { useEffect } from 'react';
+import { ThemeProvider } from 'next-themes';
 
 import '../styles/global.css';
 
@@ -7,7 +8,12 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setScreenSize();
   });
-  return <Component {...pageProps} />;
+
+  return (
+    <ThemeProvider enableSystem={true} attribute='class'>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 function setScreenSize() {
