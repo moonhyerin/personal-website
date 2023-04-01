@@ -1,17 +1,20 @@
 import React from 'react';
-import Button from '@mui/material/Button';
 
 function ContactPage() {
   return (
-    <div className='h-screen flex flex-col text-center justify-center'>
+    <div className='h-screen flex flex-col items-center justify-center'>
       <p className='text-3xl font-bold'>Get In Touch</p>
-      <p>
-        I’m currently looking for any new opportunities! My inbox is always
-        open. Whether you have a question or just want to say hi, I’ll try my
-        best to get back to you!
+      <p className='m-10 text-center'>
+        I’m currently looking for any new opportunities!
+        <br />
+        My inbox is always open. 🌈
+        <br />
+        Whether you have a question or just want to say hi, I’ll try my best to
+        get back to you!
       </p>
-      <Button>🌈</Button>
-      <a href='#'>hrmoon081632@gmail.com</a>
+      <button className='bg-[#ffb800] w-2/12 h-[50px] rounded-lg animate-bounce'>
+        Send
+      </button>
     </div>
   );
 }

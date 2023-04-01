@@ -1,8 +1,6 @@
 import React from 'react';
 import TypeIt from 'typeit-react';
 
-import homeStyles from './HomePage.module.css';
-
 type PropsType = {
   isMobile: boolean;
 };

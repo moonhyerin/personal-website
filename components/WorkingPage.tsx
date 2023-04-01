@@ -17,7 +17,7 @@ export default function WorkingPage() {
     return [1, 2, 3].map((value, i) => (
       <ThemeProvider key={i} theme={CustomFontTheme}>
         <Card
-          className='h-[300px] lg:h-3/6 m-4 lg:w-1/3'
+          className='max-w-md h-[300px] lg:h-3/6 m-4 lg:w-1/3'
           sx={{
             ':hover': { boxShadow: 10 },
           }}
@@ -38,11 +38,10 @@ export default function WorkingPage() {
       </ThemeProvider>
     ));
   };
+
   return (
     <div className='my-10 lg:mx-10 h-screen flex flex-col lg:flex-row justify-center items-center'>
       {renderCard()}
     </div>
   );
-
-  // return <div className={styles.container}>{renderCard()}</div>;
 }
