@@ -24,7 +24,7 @@ export default function Landing() {
   const isMobile = useIsMobile();
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col dark:bg-[#4a4a4a]'>
       <Header className='sticky' isMobile={isMobile} />
       <section ref={homeRef} id='home'>
         <HomePage isMobile={isMobile} />
