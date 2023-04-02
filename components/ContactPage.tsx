@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function ContactPage() {
   return (
@@ -12,9 +13,13 @@ function ContactPage() {
         Whether you have a question or just want to say hi, I’ll try my best to
         get back to you!
       </p>
-      <button className='bg-[#ffb800] w-2/12 h-[50px] rounded-lg animate-bounce'>
-        Send
-      </button>
+      <Link
+        className='bg-[#ffb800] text-white border-none p-[10px] h-[50px] rounded-lg animate-bounce'
+        href='https://linkedin.com/in/haileemoon'
+        passHref={true}
+      >
+        Don't hesitate!
+      </Link>
     </div>
   );
 }
