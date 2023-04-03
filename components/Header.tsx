@@ -7,6 +7,8 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LanguageIcon from '@mui/icons-material/Language';
 
+// import { resume } from '../public/files/resume.pdf';
+
 export const siteTitle = "Hyerin's website";
 
 export default function Header({ isMobile }) {
@@ -55,7 +57,8 @@ export default function Header({ isMobile }) {
               ['Contact', '#contact'],
             ].map(([title, url]) => (
               <Link
-                className=' font-mono font-bold text-[17px] text-black dark:text-white ml-[60px] mr-[10px] decoration-none hover:italic'
+                key={title}
+                className='font-mono font-bold text-[17px] text-black dark:text-white ml-[60px] mr-[10px] decoration-none hover:no-underline hover:text-shadow shadow-[#ffb800]'
                 href={url}
                 scroll={false}
               >
@@ -72,6 +75,16 @@ export default function Header({ isMobile }) {
           fontSize='large'
           onClick={changeLanguage}
         /> */}
+        <div className='border-2 border-[#ffb800] h-[40px] pt-[3px] px-[10px] rounded-lg hover:cursor-pointer'>
+          <Link
+            className='text-[#ffb800] text-sm hover:no-underline'
+            href='/resume.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            Resume
+          </Link>
+        </div>
       </div>
     </div>
   );
