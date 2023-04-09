@@ -7,10 +7,9 @@ import { createTheme } from '@mui/material/styles';
 
 const cardContents = [
   `I'm a curiosity-driven seasoned developer.👩🏼‍💻
-  I'm passionate about bringing both the technical and visual aspects of digital products to life. User experience, beautiful pixels and writing clean accessible, human code matters to me. I sweat the details.
-  `,
+  With a solid understanding of web development and programming concepts, I have honed my skills in React and JavaScript to develop responsive and dynamic user interfaces.`,
   `I have a BA in Advertising and Public relations from Dankook University in Korea, a Certificate of Web Development Immersive from KH Academy in Korea.`,
-  `I understand the importance of staying up to date with the latest technologies and trends in order to create the best possible products for users. Through continuous learning and hands-on experience, I strive to refine my skills and stay at the forefront of the ever-changing landscape of technology.`,
+  `I am a quick learner and enthusiastic about exploring new technologies and frameworks to stay up-to-date with the latest developments in the field. I enjoy working collaboratively with team members to find creative solutions to complex problems.`,
 ];
 const CustomFontTheme = createTheme({
   typography: {
