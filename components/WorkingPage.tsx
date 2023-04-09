@@ -24,7 +24,7 @@ export default function WorkingPage() {
     return cardContents.map((value, i) => (
       <ThemeProvider key={i} theme={CustomFontTheme}>
         <Card
-          className='hover:dark:bg-[#fcf2d4] max-w-md h-[300px] lg:h-3/6 m-4 lg:w-1/3'
+          className='hover:dark:bg-[#fcf2d4] max-w-md h-lg lg:h-3/6 m-4 lg:w-1/3'
           sx={{
             ':hover': { boxShadow: 10 },
           }}
@@ -40,7 +40,7 @@ export default function WorkingPage() {
   };
 
   return (
-    <div className='my-10 lg:mx-10 h-screen flex flex-col lg:flex-row justify-center items-center'>
+    <div className='my-10 lg:mx-10 flex flex-col lg:flex-row justify-center items-center'>
       {renderCard()}
     </div>
   );
