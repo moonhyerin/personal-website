@@ -5,6 +5,7 @@ import HomePage from '../components/HomePage';
 import AboutMePage from '../components/AboutMePage';
 import WorkingPage from '../components/WorkingPage';
 import ContactPage from '../components/ContactPage';
+import Footer from '../components/Footer';
 
 export default function Landing() {
   const homeRef = useRef();
@@ -38,6 +39,7 @@ export default function Landing() {
       <section ref={contactRef} id='contact'>
         <ContactPage />
       </section>
+      <Footer className='sticky' isMobile={isMobile} />
     </div>
   );
 }
