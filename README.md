@@ -1,6 +1,4 @@
-This project was bootstrapped with [Next.js](https://nextjs.org).
-
-# Hello and welcome to my personal website! 🚀
+# Hello and welcome to my personal [website](https://hailee.me)!🚀
 
 My name is **Hyerin** (sounds similar to hey-rin🍦), and this website serves as a portfolio and blog to showcase my skills and share my thoughts.
 
@@ -23,3 +21,5 @@ Here you'll find a selection of my work, including projects I've completed and a
 If you'd like to get in touch with me, you can find my contact information here.
 
 I hope you find my website informative and enjoyable to explore. Thank you for visiting, and feel free to reach out if you have any questions or comments!
+
+(This project was made with [Next.js](https://nextjs.org).)
